@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Ghadeni</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/homeStyle.css"/> 
+    </h:head>
+    <h:body>
+        <!--start header-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header">
+
+                    <div class="logo"><h1 style="font-family:'Purisa';margin-top:4px;"><P><span style="color:#5CB85C;">غ</span>ADENi</P></h1></div>
+                    <div class="navigator">
+                        <ul>
+                            <li><a href="#home" class="navItem borderBottom">home</a></li>
+                            <li><a href="#offers" class="navItem">Offers</a></li>
+                            <li><a href="#about" class="navItem">About</a></li>
+                            <li><a href="#meals" class="navItem">Meals</a></li>
+                            <li><a href="#order" class="navItem">Order</a></li>
+                            <li><a href="#contact" class="navItem">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="headerRight">
+                        <img src="images/btates.png" alt="icon"/>
+                        <img src="images/sheef.png" alt="sheef"/>
+                        <img src="images/cofee.png" alt="cofee"/>
+                        <img src="images/bool.png" alt="bool"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end header-->
+
+        <!--Start slider-->
+        <div class="container"  id="home">
+            <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-8" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                            <img src="images/slide1.jpg" alt=""/></div>
+
+                                        <div class="item" data-slide-number="1">
+                                            <img src="images/slide2.png" alt=""/></div>
+
+                                        <div class="item" data-slide-number="2">
+                                            <img src="images/slide3.jpg" alt=""/></div>
+
+                                        <div class="item" data-slide-number="3">
+                                            <img src="images/slide4.png" alt=""/></div>
+
+                                        <div class="item" data-slide-number="4">
+                                            <img src="images/slide5.jpg" alt=""/></div>
+
+                                        <div class="item" data-slide-number="5">
+                                            <img src="images/slide6.jpg" alt=""/></div>
+                                    </div><!-- Carousel nav -->                               
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4" id="carousel-text"></div>
+
+                            <div id="slide-content" style="display: none;">
+                                <div id="slide-content-0">
+                                    <h2>Slider One</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-1">
+                                    <h2>Slider Two</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-2">
+                                    <h2>Slider Three</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-3">
+                                    <h2>Slider Four</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-4">
+                                    <h2>Slider Five</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-5">
+                                    <h2>Slider Six</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row hidden-xs" id="slider-thumbs">
+                    <!-- Bottom switcher of slider -->
+                    <ul class="hide-bullets">
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-0"><img src="images/slide1.jpg"/></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-1"><img src="images/slide2.png"/></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-2"><img src="images/slide3.jpg"/></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-3"><img src="images/slide4.png"/></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-4"><img src="images/slide5.jpg"/></a>
+                        </li>
+
+                        <li class="col-sm-2">
+                            <a class="thumbnail" id="carousel-selector-5"><img src="images/slide6.jpg"/></a>
+                        </li>
+                    </ul>                 
+                </div>
+            </div>
+        </div>
+        <!--end slider-->
+
+        <!--start last offers-->
+        <div class="container">
+            <div class="row">
+                <h2 style="font-family:'Purisa';text-align:center;margin-top:0">
+                    <span style="color:#5CB85C">o</span>f<span style="color:#5CB85C">f</span>e<span style="color:#5CB85C">r</span>s
+                </h2>
+
+                <!--JSF looping-->
+                <ui:repeat value="#{offer.viewOffers()}" var="v">
+                    <div class="col-xs-3">
+                        <div class="offer offer-success">
+                            <div class="shape">
+                                <div class="shape-text">
+                                    <h:outputText value="#{v.price}"/>
+                                </div>
+                            </div>
+                            <div class="offer-content">
+                                <h3 class="lead">
+                                    <h:outputText value="#{v.name}"/>
+                                </h3>						
+                                <p><h:outputText value="#{v.description}" /><br/> and so one</p>
+                            </div>
+                            <h:form style="display: inline-block">
+                                <h:commandButton value="Add to my order" class="redBack"
+                                                 action="#{addToBillSessions.setSessions(v.name,v.price)}">
+                                    <f:ajax execute="@form"/>
+                                </h:commandButton>
+
+                            </h:form>
+                        </div>
+                    </div>
+                </ui:repeat>
+            </div>
+            <div class="hiddenApplyOffer">
+                <h:form>
+                    <h:inputText p:placeholder=" Enter number of users" class="applyOfferInput" value="#{orders.number}"/>
+                    <h:commandButton value="D O N E" class="applyOfferButton" action="#{orders.insertOrder(sessionScope['userId'],sessionScope['productName'],sessionScope['productPrice'])}"/>
+                </h:form>
+            </div>
+        </div>
+        <!--end last offers-->
+
+        <!--Start about us-->
+        <div class="aboutUs" id="about">
+            <div class="aboutContent">                
+                <div>
+                    <h2 style="font-family:'Purisa';text-align:center"><span style="color:#5CB85C">A</span>b<span style="color:#5CB85C">o</span>u<span style="color:#5CB85C">t</span> u<span style="color:#5CB85C">s</span></h2>
+                    <p>
+                        We love restaurants as much as you do. That’s why we’ve been helping them fill tables since 1999. Whether you’re browsing for a quick bite or planning a big night, Restaurant.com will help you discover the perfect dining experience. Your new favorite restaurant is out there – go ahead, dig in!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end about us-->
+        <!--start meals-->
+        <div class="container-fluid mm" style="background-color:#e8e8e8" id="meals">
+            <h2 style="font-family:'Purisa'"><span style="color:#5CB85C">M</span>e<span style="color:#5CB85C">a</span>l<span style="color:#5CB85C">s</span></h2>
+            <div class="container container-pad" id="property-listings">
+
+                <div class="row">
+                    <!--JSF looping start-->
+                    <ui:repeat var="meal"  value="#{allMeals.meals}">
+                        <div class="col-sm-6"> 
+                            <!-- Begin Listing: 609 W GRAVERS LN-->
+                            <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                                <div class="media">
+                                    <a class="pull-left" href="#" target="_parent">
+                                        <img alt="image" class="img-responsive" src="images/Food.jpg"/></a>
+
+                                    <div class="clearfix visible-sm"></div>
+
+                                    <div class="media-body fnt-smaller">
+                                        <a href="#" target="_parent"></a>
+
+                                        <h4 class="media-heading">
+                                            <a href="#" target="_parent">
+                                                <h:outputText value="#{meal.name}"/>
+                                                <small class="pull-right">Ghadeni restaurant</small></a></h4>
+
+                                        <!--meal price-->
+                                        <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                            <li><span style="font-size: 15px;color: red">
+                                                    <h:outputText value="#{meal.price}" /> $</span> | for one person</li>
+                                        </ul>
+                                        <!--meal description-->
+                                        <p class="hidden-xs">
+                                            <h:outputText value="#{meal.description}"/>
+                                        </p>
+                                        <span class="fnt-smaller fnt-lighter fnt-arial">
+                                            Courtesy of HS Fox , Roach-Chestnut HillEvergreen
+                                        </span>
+                                    </div>
+                                    <h:form>
+                                        <h:commandButton action="#{orders.insertOrder(sessionScope['userId'], meal.name, meal.price)}" class="addMealToOrder" value=""/>
+                                    </h:form>
+                                </div>
+                            </div><!-- End Listing-->
+                        </div><!-- End Col -->
+                    </ui:repeat>
+                    <!--JSF looping end-->
+
+
+                </div><!-- End row -->
+            </div><!-- End container -->
+        </div>
+        <!--end meals-->
+
+        <!--Start make your order-->
+        <div class="orderMeal">
+            <h2 style="font-family:'Purisa'">y<span style="color:#5CB85C">o</span>u<span style="color:#5CB85C">r</span> o<span style="color:#5CB85C">r</span>d<span style="color:#5CB85C">e</span>r</h2>
+            <div class="order">
+                <div class="orderItems">
+                    <h:form>
+                        <h:dataTable id="ordr" class="table" var="x" value="#{orderList.get(sessionScope['userId'])}">
+                            <h:column>
+                                <f:facet name="header">Name</f:facet>
+                                <h:outputText value="#{x.name}"/>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Price</f:facet>
+                                <h:outputText value="#{x.price}"/>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Number</f:facet>
+                                <h:outputText value="#{x.number}"/>
+                            </h:column>
+
+                        </h:dataTable><br/>
+                        <h:commandButton action="finish.xhtml" style="margin-left: 20px;border:0;width:100px;height:30px;border-radius:2px" value="Done"  class="btn-success"/>
+                    </h:form>
+                </div>
+
+            </div>
+        </div>
+        <!--end make -->
+        <!--Start Section ContactUS-->
+        <section class="contact text-center">
+            <div class="contact-fields">
+                <div class="container">
+                    <div class="row">
+                        <i class="fa fa-headphones fa-5x"></i>
+                        <h2 class="h1">Tell us what you feel</h2>
+                        <p class="lead">Feel free to contact us any time</p>
+                        <!--Start Contact Form -->
+                        <h:form>
+                            <div class="col-md-6 wow bounceInRight sendMessage" data-wow-duration="1s" data-wow-offset="180">
+                                <div class="form-group">
+                                    <h:inputTextarea class="form-control input-lg" p:placeholder="Your Message" value="#{message.message}" required="true"/>
+                                </div>
+                                <h:commandButton action="#{message.sendMessage(sessionScope['userEmail'])}" class="btn btn-success btn-lg btn-block" value="Send message"/>
+                            </div>
+                        </h:form>
+                        <!--End Contact Form -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Section ContactUS-->
+        <!--Start Section OurClients-->
+        <section class="clients">
+            <div class="container">
+                <div class="row"  style="margin-top:0">
+                    <ul class="list-unstyled">
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay=".5s"> <img class="image-responsive center-block" src="images/clients/1.png" alt="Client 1"/></li>
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay="1s"><img class="image-responsive center-block" src="images/clients/2.png" alt="client 2"/></li>
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay="1.5s"><img class="image-responsive center-block" src="images/clients/3.png" alt="Client 3"/></li>
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay="2s"><img class="image-responsive center-block" src="images/clients/4.png" alt="Client 4"/></li>
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay="2.5s"><img class="image-responsive center-block" src="images/clients/5.png" alt="Client 5"/></li>
+                        <li class="col-md-2 col-xs-4 wow bounceInLeft" data-wow-duration=".5s" data-wow-offset="20" data-wow-delay="3s"><img class="image-responsive center-block" src="images/clients/6.png" alt="Client 6"/></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Section OurClients-->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-1.11.2.js"></script>
+        <script src="js/homeJQuery.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="jQuery.js"></script>
+    </h:body>
+</html>

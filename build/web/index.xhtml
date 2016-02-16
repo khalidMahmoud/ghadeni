@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/><!--Internet Explorer Meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/><!--Mobile Meta-->
+        <meta charset="utf-8"/>
+        <title>Ghadeni</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+    </h:head>
+    <h:body>
+         <!--Start NavBar-->
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><span style="color:#5CB85C;font-size:39px;margin-left:450px">غ</span>
+                  <span style="color:#fff;font-size:32px;font-family:'Purisa'">ADENI</span> </a>
+            </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                
+            </div>
+        </nav>
+        <!--start center image-->
+        <div class="center">
+            <img src="images/Food.jpg" alt="food" />
+        </div>
+        <!--end center image-->
+        
+        <div class="reg-log_container">
+        <!--start login-->
+        <div class="logIn">
+            <h:form>
+                <h:inputText class="input-lg InputLog wow bounceInLeft" p:placeholder="Enter e-mail" required="true" value="#{user.email}" validatorMessage="invalid email address">
+                     <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]"/>
+                </h:inputText><br/><br/>
+                
+                <h:inputSecret class="input-lg InputLog wow bounceInRight" p:placeholder="Enter password" required="true" value="#{user.password}" validatorMessage="minimum 6 charactures">
+                    <f:validateLength minimum="6"/>
+                </h:inputSecret><br/><br/>
+                <h:commandButton class="btn btn-success submitButton input-lg wow bounceInUp" value="L O G I N" action="#{user.login()}"/>
+            </h:form>
+        </div>
+        <!--end login-->
+        <!--start register-->
+        <div class="register">
+            <h:form>
+                <f:event listener="#{user.validatePassword}" type="postValidate"/>
+                <h:inputText class="input-lg InputLog wow bounceInLeft" p:placeholder="Enter name" required="true" value="#{user.name}" validatorMessage="minimum 3 charactures">
+                    <f:validateLength minimum="3"/>
+                </h:inputText><br/><br/>
+                <h:inputText id="emailAddress" class="input-lg InputLog wow bounceInRight" p:placeholder="Enter e-mail" required="true" value="#{user.email}" validatorMessage="not valid email address">
+                    <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]"/>
+                </h:inputText><br/>
+                <h:message for="emailAddress" style="color: #fff" />
+                <br/>
+                <h:inputSecret id="password" class="input-lg InputLog wow bounceInLeft" p:placeholder="Enter password" required="true" value="#{user.password}" validatorMessage="minimun 6 characters">
+                    <f:validateLength minimum="6"/>
+                </h:inputSecret>
+                <h:message for="password" style="color:#fff" />
+                <br/><br/>
+                <h:inputSecret id="confirmPassword" class="input-lg InputLog wow bounceInLeft"  p:placeholder="Re-enter password" required="true" validatorMessage="not the same password">
+                    <h:message for="confirmPassword" style="color: #fff" />
+                </h:inputSecret><br/><br/>
+                <h:inputText class="input-lg InputLog wow bounceInLeft" p:placeholder="Enter mobile number" required="true" value="#{user.phone}"/><br/><br/>
+                 
+                <h:commandButton class="btn btn-success submitButton input-lg wow bounceInUp" value="R E G I S T E R" action="#{user.register()}"/>
+            </h:form>
+        </div>
+        <!--end register-->
+        </div>
+        
+        
+        <div class="footer">
+            <div class="footerIcons">
+                <a href="#"> <img src="images/facebookIcon.png" alt="facebook" title="facebook" /></a>
+                <a href="#"> <img src="images/twitterIcon.png" alt="twitter" title="twitter" /></a>
+                <a href="#"> <img src="images/youtubeIcon.png" alt="youtube" title="youtube"/></a>
+                <a href="#"> <img src="images/linkedinIcon.png" alt="linkedin" title="linkedin" /></a>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="jQuery.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>new WOW().init();</script>
+    </h:body>
+</html>
+
